@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/agc-breeding-date.js"></script>
+  <style>
+    agc-calendar-action, agc-countdown-action {
+      float: right;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align: center">Breeding Date Calculator</h2>
+  <!-- <agc-breeding-date-progress socket="example"></agc-breeding-date-progress> -->
+  <agc-breeding-date socket="example" mode="full">
+    <div slot="results">
+        <agc-breeding-date-results socket="example">
+          <div slot="empty"><agc-breeding-date-results-placeholder></agc-breeding-date-results-placeholder></div>
+        </agc-breeding-date-results>
+    </div>
+  </agc-breeding-date>
+  <agc-breeding-date-actions socket="example"></agc-breeding-date-actions>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+{
+  "components": [
+    {
+      "tag": "agc-breeding-date",
+      "dependencies": [],
+      "componentClass": "AgcBreedingDate",
+      "componentPath": "components/agc-breeding-date/agc-breeding-date.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/agc-breeding-date/agc-breeding-date.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "shadow",
+          "type": "Boolean",
+          "attr": "shadow"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-breeding-date-action",
+      "dependencies": [],
+      "componentClass": "AgcBreedingDateAction",
+      "componentPath": "components/agc-breeding-date-reset-action/agc-breeding-date-action.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/agc-breeding-date-reset-action/agc-breeding-date-action.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "action",
+          "type": "String",
+          "attr": "action"
+        },
+        {
+          "name": "actionText",
+          "type": "String",
+          "attr": "action-text"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcAction"
+        }
+      ]
+    },
+    {
+      "tag": "agc-breeding-date-actions",
+      "dependencies": [],
+      "componentClass": "AgcBreedingDateActions",
+      "componentPath": "components/agc-breeding-date-actions/agc-breeding-date-actions.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/agc-breeding-date-actions/agc-breeding-date-actions.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        }
+      ],
+      "states": [
+        {
+          "name": "results"
+        }
+      ]
+    },
+    {
+      "tag": "agc-breeding-date-progress",
+      "dependencies": [],
+      "componentClass": "AgcBreedingDateProgress",
+      "componentPath": "components/agc-breeding-date-progress/agc-breeding-date-progress.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/agc-breeding-date-progress/agc-breeding-date-progress.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-breeding-date-results",
+      "dependencies": [],
+      "componentClass": "AgcBreedingDateResults",
+      "componentPath": "components/agc-breeding-date-results/agc-breeding-date-results.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/agc-breeding-date-results/agc-breeding-date-results.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-breeding-date-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcBreedingDateResultsPlaceholder",
+      "componentPath": "components/agc-breeding-date-results-placeholder/agc-breeding-date-results-placeholder.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/agc-breeding-date-results-placeholder/agc-breeding-date-results-placeholder.css"
+          ]
+        }
+      }
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
